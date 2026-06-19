@@ -1,0 +1,3 @@
+event_id,event_name,start_date,end_date,year,national_temp_record_C,return_period_years_factual,probability_ratio_low,probability_ratio_best,attributable_intensity_C_low,attributable_intensity_C_best,excess_deaths_low,excess_deaths_high,gdp_year,source
+E1,April 2023 Iberian heatwave,2023-04-26,2023-04-28,2023,36.9,400,100,100,2,2,NA,NA,2023,"World Weather Attribution (2023) ""Extreme April heat in Spain, Portugal, Morocco and Algeria almost impossible without climate change"""
+E2,July 2022 Iberian heatwave,2022-07-07,2022-07-18,2022,47.4,NA,NA,NA,1.25,1.25,1063,1380,2022,"DGS Portugal excess mortality report (2022) via The Portugal News / Anadolu Agency; anthropogenic contribution from BAMS 2024 storyline attribution of summer 2022 Western Europe heatwave"
