@@ -5,7 +5,7 @@ Final project (AVCAD). A simplified, fully-documented Portugal-focused reproduct
 - **April 2023** (3-day record heatwave; World Weather Attribution study)
 - **July 2022** (12-day heatwave; Portugal's all-time temperature record + 1,000+ excess deaths)
 
-See **[docs/methodology.md](docs/methodology.md)** for full sources, the loss-attribution method, a sanity check against the published global figures, and limitations — read that before the figure.
+See **[docs/methodology.md](docs/methodology.md)** for full sources, the loss-attribution method, a check against the published global figures, and limitations.
 
 ## Structure
 
