@@ -34,6 +34,16 @@ ENTITY_LABELS = {
 }
 
 
+def fmt_eur(x, _):
+    """Format axis ticks as €1M, €500K, etc. for readability."""
+    if x >= 1_000_000:
+        return f"€{x/1_000_000:.0f}M"
+    elif x >= 1_000:
+        return f"€{x/1_000:.0f}K"
+    else:
+        return f"€{x:.0f}"
+
+
 def plot_panel(ax, df, title):
     df = df.sort_values("loss_eur_central", ascending=False).head(TOP_N)
     df = df.sort_values("loss_eur_central")  # ascending for horizontal barh order
@@ -54,9 +64,9 @@ def plot_panel(ax, df, title):
     ax.set_yticks(list(y))
     ax.set_yticklabels(df["entity"], fontsize=8)
     ax.set_xscale("log")
-    ax.set_xlabel("Estimated attributable loss to Portugal (EUR)")
+    ax.set_xlabel("Estimated attributable loss to Portugal")
     ax.set_title(title, fontsize=10, loc="left")
-    ax.xaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f"{x:,.0f}"))
+    ax.xaxis.set_major_formatter(mticker.FuncFormatter(fmt_eur))
     ax.grid(axis="x", which="major", linestyle="--", linewidth=0.5, alpha=0.5)
     ax.spines[["top", "right"]].set_visible(False)
 
